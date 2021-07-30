@@ -1,4 +1,6 @@
 <script type="text/javascript">
+/* This script is for converting number to words for Bangladeshi number system & currency.
+This is written by Md Asadujjaman Nur and published at- https://github.com/asadkuet/number-to-word-BDT */
 function Tk(amount) {
     var words = new Array();
     words[0] = 'Zero';
@@ -101,13 +103,13 @@ function AmountInWord(n) {
             op = ''; 
         }
         if (whole == '' && fraction != '') {
-            op = fraction + 'paisa only';
+            op = fraction + 'paisa Only';
         }
         if (whole != '' && fraction == '') {
-            op =  whole + 'Taka only';
+            op =  whole + 'Taka Only';
         }
         if (whole != '' && fraction != '') {
-            op = whole + 'Taka and ' + fraction + 'paisa only';
+            op = whole + 'Taka and ' + fraction + 'paisa Only';
         }
 
         let amount = parseFloat(n); 
